@@ -8,10 +8,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        # with:
+        #   ref: 580fc12670abb7190bf5b1c43b70ebdf113cf26c
       - name: Hello world action step
         id: hello
         # uses: GH-foundations-markdown/docker-action-test@v1
-        uses: ./docker-action-test@v1
+        uses: ./docker-action-test
         with:
           who-to-greet: 'Eficodean'
       # Use the output from the `hello` step
