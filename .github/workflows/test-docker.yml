@@ -12,7 +12,7 @@ jobs:
           ref: 9b34cdf7afeb141dd344bc0502e7cb0075809ef7
       - name: Hello world action step
         id: hello
-        # uses: GH-foundations-markdown/docker-action-test@v1
+        # uses local path to action from root of repo
         uses: ./docker-action-test
         with:
           who-to-greet: 'Eficodean'
